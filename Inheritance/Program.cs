@@ -7,21 +7,7 @@ namespace Inheritance
         static void Main(string[] args)
         {
             // TODO Be sure to follow best practice when creating your classes
-
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
+            //***All created classes are in separate tabs***
 
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
@@ -29,11 +15,42 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            Bird hyacinthMacaw = new Bird()
+            {
+                beakShape = "curved",
+                canFly = true,
+                eggColor = "white",
+                mobilityType = "wings",
+                avgLifespan = 50,
+                diet = "herbivore",
+            };
+            Console.WriteLine("The Hyacinth Macaw:");
+            Console.WriteLine();
+            hyacinthMacaw.GetBirdProperties();
+
+            Console.WriteLine();
+        /*Create an object of your Reptile class
+         *  give values to your members using the object of your Reptile class
+         *  
+         * Creatively display the class member values 
+         */
+
+            Console.WriteLine("The Iguana:");
+            Console.WriteLine();
+            Reptile iguana = new Reptile()
+            {
+                eggs = true,
+                numberOfLungs = 2,
+                mobilityType = "legs",
+                avgLifespan = 14,
+                diet = "herbivore",
+            };
+            iguana.GetReptileProperties();
+
         }
-    }
+
+
+     }
+
 }
+
